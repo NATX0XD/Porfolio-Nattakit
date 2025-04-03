@@ -208,6 +208,7 @@ const Navbar = ({
         settings.autoNative && (
           <Flex style={{ flexGrow: 1 }}>
             <Button
+              style={{ color: "white" }}
               icon={<MenuOutlined />}
               shape="default"
               type="text"
