@@ -382,6 +382,7 @@ const CardProject = () => {
     >
       {cardItems.map((item, index) => (
         <QueryCardView
+          key={index}
           width="100%"
           title={item.title}
           icon={item.icon}

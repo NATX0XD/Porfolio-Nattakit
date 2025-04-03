@@ -105,7 +105,7 @@ const CardProfileDetail = () => {
               }}
             >
               {itemsProfiles.map((item, index) => (
-                <>
+                <React.Fragment key={index}>
                   <Flex
                     justify="space-between"
                     align="center"
@@ -145,7 +145,7 @@ const CardProfileDetail = () => {
                       ...styleDivider,
                     }}
                   />
-                </>
+                </React.Fragment>
               ))}
             </Flex>
           }
@@ -278,6 +278,7 @@ const CardProfileDetail = () => {
     >
       {cardItems.map((item, index) => (
         <QueryCardView
+          key={index}
           width="100%"
           title={item.title}
           icon={item.icon}
