@@ -10,6 +10,7 @@ import {
   MoonOutlined,
   SunOutlined,
   SettingOutlined,
+  LayoutOutlined,
 } from "@ant-design/icons";
 import { usePathname } from "next/navigation";
 import Link from "next/link";
@@ -72,7 +73,23 @@ const Navbar = ({
       onClick: () => handleChange("locale", "en"),
     },
   ];
-
+  const contentOptions = [
+    {
+      label: "เล็ก",
+      key: "screenMD",
+      onClick: () => handleChange("contentWidth", "screenMD"),
+    },
+    {
+      label: "ใหญ่",
+      key: "screenLG",
+      onClick: () => handleChange("contentWidth", "screenLG"),
+    },
+    {
+      label: "เต็ม",
+      key: "screenXL",
+      onClick: () => handleChange("contentWidth", "screenXL"),
+    },
+  ];
   const paletteOptions = [
     {
       label: "Normal",
@@ -208,9 +225,9 @@ const Navbar = ({
       >
         <Dropdown
           menu={{
-            items: languageItem,
+            items: contentOptions,
             selectable: true,
-            selectedKeys: [settings?.locale],
+            selectedKeys: [settings?.contentWidth],
           }}
           placement="bottomRight"
           arrow={{ pointAtCenter: true }}
@@ -218,7 +235,7 @@ const Navbar = ({
         >
           <Button
             style={{ color: "white" }}
-            icon={<GlobalOutlined />}
+            icon={<LayoutOutlined />}
             type="text"
             size="large"
           />

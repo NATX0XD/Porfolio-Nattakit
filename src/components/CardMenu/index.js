@@ -48,12 +48,12 @@ const CardMenu = () => {
       href: "/certifications",
     },
 
-    {
-      icon: <SettingOutlined />,
-      label: "ตั้งค่า",
-      color: "#722ed1",
-      href: "/setting",
-    },
+    // {
+    //   icon: <SettingOutlined />,
+    //   label: "ตั้งค่า",
+    //   color: "#722ed1",
+    //   href: "/setting",
+    // },
   ];
   return (
     // <div

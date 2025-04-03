@@ -17,7 +17,7 @@ const ContentContainer = ({ children }) => {
     <Layout
       style={{
         width: "calc(100% - 10px)",
-        maxWidth: breakpoints["screenLG"], //settings?.contentWidth
+        maxWidth: breakpoints[settings?.contentWidth],
       }}
     >
       {children}
