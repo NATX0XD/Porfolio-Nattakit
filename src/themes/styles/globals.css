@@ -1,0 +1,52 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+  background: #fff;
+  position: relative;
+}
+.ant-layout {
+  background: transparent !important;
+}
+.ant-col > div::-webkit-scrollbar {
+  display: none;
+}
+
+.CardCerImagesScroll::-webkit-scrollbar {
+  width: 6px; /* ทำให้ scrollbar แคบลง */
+}
+
+.CardCerImagesScroll::-webkit-scrollbar-track {
+  background: transparent; /* ทำให้พื้นหลัง scrollbar โปร่งใส */
+}
+
+.CardCerImagesScroll::-webkit-scrollbar-thumb {
+  background: rgba(150, 150, 150, 0.5); /* สี scrollbar เป็นเทาโปร่งแสง */
+  border-radius: 10px; /* ทำให้ scrollbar มีมุมโค้ง */
+}
+
+.CardCerImagesScroll::-webkit-scrollbar-thumb:hover {
+  background: rgba(150, 150, 150, 0.7); /* เปลี่ยนสีเมื่อ hover */
+}
+.CardCerImagesScroll {
+  -webkit-overflow-scrolling: touch; /* iOS Safari เลื่อน Smooth */
+}
+/* body { */
+/* background-image: url("https://www.icloud.com/system/icloud.com/current/wallpaper.svg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed; */
+/* background: linear-gradient(135deg, #0b1a36 0%, #050d1c 100%); */
+/* } */
+/* 
+body::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(64deg, #00355f, #002f6c 44.5%, #02006c);
+  opacity: 0.5;
+  z-index: -1;
+} */
