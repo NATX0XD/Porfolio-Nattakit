@@ -69,6 +69,12 @@ const SidebarMode = ({
             type="text"
           />
         }
+        style={{
+          backgroundColor: " rgba(0, 0, 0, 0.7) ",
+          backdropFilter: "blur(10px)",
+          WebkitBackdropFilter: "blur(10px)",
+          color: "white",
+        }}
         styles={{
           header: { padding: "8px 16px", borderBottom: "0px" },
           body: { padding: "0px 4px 0px 0px", overflow: "hidden" },
@@ -135,6 +141,7 @@ const Sidebar = ({
           overflow: "auto",
           padding: "0px 0px 24px",
           backgroundColor: "inherit",
+          color: "white",
         }}
         className={styles.sidebar}
         onClick={onChangeRoute}
@@ -144,6 +151,7 @@ const Sidebar = ({
             <span
               style={{
                 fontWeight: pathname === item.key ? "bold" : "normal",
+                color: "white",
               }}
             >
               {item.label}
@@ -159,6 +167,7 @@ const Sidebar = ({
               <span
                 style={{
                   fontWeight: pathname === child.key ? "bold" : "normal",
+                  color: "white",
                 }}
               >
                 {child.label}
