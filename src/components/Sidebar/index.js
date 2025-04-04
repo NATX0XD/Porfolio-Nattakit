@@ -47,7 +47,11 @@ const SidebarMode = ({
 }) => {
   if (!settings?.autoNative) {
     return (
-      <Flex align="center" vertical>
+      <Flex
+        align="center"
+        vertical
+        style={{ position: "sticky", top: 0, zIndex: 999 }}
+      >
         {title}
         {children}
       </Flex>
@@ -133,7 +137,7 @@ const Sidebar = ({
       <Menu
         mode="inline"
         selectedKeys={[pathname]}
-        defaultOpenKeys={[defaultOpenKeys.key]}
+        // defaultOpenKeys={[defaultOpenKeys.key]}
         style={{
           height: "calc(100dvh - 50px)",
           width: collapsedWidth,

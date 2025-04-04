@@ -44,6 +44,7 @@ const MainLayout = ({ children }) => {
   };
   const { mode } = settings;
   const palettes = Palette(settings?.palette, mode);
+  console.log(settings.navbar);
   return (
     <ThemeComponent settings={settings} mode={sidebarMode}>
       <div
@@ -65,6 +66,11 @@ const MainLayout = ({ children }) => {
                 settings?.autoNative ||
                 settings.navigationCollapse
               }
+              style={{
+                background: " rgba(56, 56, 61, 0.6) ",
+                backdropFilter: "blur(10px)",
+                WebkitBackdropFilter: "blur(10px)",
+              }}
             >
               <Sidebar
                 openSidebar={openSidebar}
@@ -73,11 +79,13 @@ const MainLayout = ({ children }) => {
               />
             </Sider>
           ) : (
-            <Sidebar
-              openSidebar={openSidebar}
-              onCloseSidebar={handleCloseSidebar}
-              onChangeRoute={handleChangeRoute}
-            />
+            <>
+              <Sidebar
+                openSidebar={openSidebar}
+                onCloseSidebar={handleCloseSidebar}
+                onChangeRoute={handleChangeRoute}
+              />
+            </>
           )}
           <ThemeComponent
             settings={settings}
@@ -91,7 +99,9 @@ const MainLayout = ({ children }) => {
                   zIndex: 999,
                   display: "flex",
                   alignItems: "center",
-                  background: " rgba(56, 56, 61, 0.6) ",
+                  background: settings.navbar
+                    ? "rgba(56, 56, 61, 0.6) "
+                    : "inherit ",
                   backdropFilter: "blur(10px)",
                   WebkitBackdropFilter: "blur(10px)",
                 }}

@@ -22,16 +22,10 @@ const Navigations = [
     label: "Project",
     icon: <HiCog style={{ color: "white" }} />,
   },
+  {
+    key: "/setting",
+    label: "Setting",
+    icon: <HiCog style={{ color: "white" }} />,
+  },
 ];
 export default Navigations;
-
-//   {
-//     name: "Experience",
-//     src: "/experience",
-//     icon: <HiBriefcase />,
-//   },
-//   {
-//     name: "Contact",
-//     src: "/contact",
-//     icon: <HiMail />,
-//   },
