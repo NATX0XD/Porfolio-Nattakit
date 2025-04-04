@@ -160,11 +160,11 @@ const CardEducationsDetail = () => {
       grade: "เกรดเฉลี่ยสะสม 3.98",
       imageGrades: [
         {
-          imageSrc: "/images/grades/HightVocationalCertificate1.jpg",
+          imageSrc: "/images/Grades/HightVocationalCertificate1.jpg",
           imageAlt: "เกรด ปวส ปี1",
         },
         {
-          imageSrc: "/images/grades/HightVocationalCertificate2.jpg",
+          imageSrc: "/images/Grades/HightVocationalCertificate2.jpg",
           imageAlt: "เกรด ปวส ปี2",
         },
       ],
@@ -179,15 +179,15 @@ const CardEducationsDetail = () => {
       grade: "เกรดเฉลี่ยสะสม 3.96",
       imageGrades: [
         {
-          imageSrc: "/images/grades/Vocationalcertificate1.jpg",
+          imageSrc: "/images/Grades/Vocationalcertificate1.jpg",
           imageAlt: "เกรด ปวช ปี1",
         },
         {
-          imageSrc: "/images/grades/Vocationalcertificate2.jpg",
+          imageSrc: "/images/Grades/Vocationalcertificate2.jpg",
           imageAlt: "เกรด ปวช ปี2",
         },
         {
-          imageSrc: "/images/grades/Vocationalcertificate3.jpg",
+          imageSrc: "/images/Grades/Vocationalcertificate3.jpg",
           imageAlt: "เกรด ปวช ปี3",
         },
       ],
