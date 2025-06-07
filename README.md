@@ -30,7 +30,7 @@ This is my personal developer portfolio built using Next.js 14, Ant Design, Fram
 - 📱 **Responsive** — Works seamlessly on desktop & mobile
 - 🎨 **Styled with Ant Design** — Clean and professional UI
 - 🎞️ **Framer Motion Animations** — Smooth page transitions
-- 🔧 **Drag-and-Drop** — Interactive components using `react-beautiful-dnd`
+- ❌ NOT USE 🔧 **Drag-and-Drop** — Interactive components using `react-beautiful-dnd` 
 
 ---
 
