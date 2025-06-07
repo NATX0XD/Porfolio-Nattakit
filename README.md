@@ -1,37 +1,71 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# 🧑‍💻 Nattakit's Portfolio
 
-## Getting Started
+[🌐 Visit Portfolio](https://my-porfolio-nattakit.vercel.app/)  
+[📁 View Source Code](https://github.com/NATX0XD/Porfolio-Nattakit)
 
-First, run the development server:
+This is my personal developer portfolio built using Next.js 14, Ant Design, Framer Motion, and other modern frontend libraries. It showcases my skills, projects, contact information, and smooth user experience with animations and responsive design.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+---
+
+## 🚀 Tech Stack
+
+| Name                  | Description                             |
+|-----------------------|-----------------------------------------|
+| **Next.js 14**        | React framework for SSR & static site   |
+| **React 18**          | UI library                              |
+| **Ant Design (v5)**   | UI component library                    |
+| **Framer Motion**     | Animation library                       |
+| **React Icons**       | Icon library                            |
+| **React Beautiful DnD** | Drag-and-drop support                |
+| **ESLint**            | Linting for code quality                |
+
+---
+
+## 🧩 Features
+
+- 📄 **Home / About** — Personal introduction and brief overview
+- 🧰 **Skills** — Tech stack & tools used
+- 📦 **Projects** — Showcases selected works with animations
+- 📫 **Contact** — Social links and email
+- 📱 **Responsive** — Works seamlessly on desktop & mobile
+- 🎨 **Styled with Ant Design** — Clean and professional UI
+- 🎞️ **Framer Motion Animations** — Smooth page transitions
+- 🔧 **Drag-and-Drop** — Interactive components using `react-beautiful-dnd`
+
+---
+
+## 📁 Project Structure
+
+```text
+my-portfolio/
+├── public/              # Static assets (images, favicon)
+├── src/
+│   ├── components/      # Reusable React components (Navbar, Footer, etc.)
+│   ├── pages/           # Next.js pages
+│   │   ├── index.js     # Homepage
+│   │   ├── about.js     # About Me page
+│   │   ├── projects.js  # Projects listing
+│   │   └── contact.js   # Contact form/info
+│   ├── styles/          # Custom global and module styles
+│   └── utils/           # Utility functions and constants
+├── .eslintrc.json       # ESLint config
+├── package.json         # Project metadata and dependencies
+├── README.md            # Project overview (this file)
+└── next.config.js       # Next.js configuration
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+```markdown
+## 🛠️ Scripts
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+| Command         | Description                    |
+|-----------------|--------------------------------|
+| `npm run dev`   | Run development server         |
+| `npm run build` | Build project for production   |
+| `npm run start` | Start production server        |
+| `npm run lint`  | Run ESLint to check code style |
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
 
-## Learn More
+---
 
-To learn more about Next.js, take a look at the following resources:
+หากต้องการ Diagram ในรูปแบบภาพ เช่น UML หรือ Sitemap Diagram สำหรับเว็บ portfolio นี้ — บอกได้เลยครับ เดี๋ยวสร้างให้เพิ่มเติมให้เลย!
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
-"# Porfolio-Nattakit" 
